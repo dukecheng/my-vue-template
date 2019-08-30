@@ -11,7 +11,7 @@ docker run -it --rm \
 -v ~/.npm:/root/.npm \
 -v `pwd`:/src \
 --workdir /src \
-node /bin/sh -c "node --version && yarn install && yarn run build"
+node /bin/sh -c "node --version && yarn install --registry https://registry.npm.taobao.org && yarn run build"
 
 docker build -t hub.niusys.com/practice/my_vue_template:${BUILD_NUMBER} .
 
