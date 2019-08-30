@@ -11,6 +11,7 @@
 <script>
 import { Navbar, Sidebar, AppMain } from './components'
 export default {
+  name: 'Layout',
   components: {
     Navbar,
     Sidebar,
