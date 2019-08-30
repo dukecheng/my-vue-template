@@ -2,7 +2,7 @@
   <div class="app-wrapper">
     <sidebar class="sidebar-container" />
     <div class="main-container">
-      <div class="fixed-header">
+      <div :class="{'fixed-header':fixedHeader}">
         <navbar />
       </div>
       <app-main />
@@ -18,6 +18,11 @@ export default {
     Navbar,
     Sidebar,
     AppMain
+  },
+  computed: {
+    fixedHeader() {
+      return this.$store.state.settings.fixedHeader
+    }
   }
 }
 </script>

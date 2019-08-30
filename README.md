@@ -38,3 +38,6 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 yarn add normalize.css 
 ```
 
+### JS格式化有问题的
+需要安装eslint vs插件解决
+
