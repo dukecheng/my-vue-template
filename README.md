@@ -32,4 +32,9 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 项目开发习惯配置文件, 规范了tab等的宽度
 
 ### 在vue cli基础上引入的组件
+#### normalize.css
+解决各浏览器样式差异问题
+```
+yarn add normalize.css 
+```
 
