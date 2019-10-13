@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-BUILD_NUMBER=1;
+BUILD_NUMBER=1.0.1;
 
 docker run -it --rm \
 -v ~/.cache:/root/.cache \
