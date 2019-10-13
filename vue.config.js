@@ -16,6 +16,10 @@ const name = defaultSettings.title || 'vue Admin Template' // page title
 const port = process.env.port || process.env.npm_config_port || 9529 // dev port
 
 module.exports = {
+  publicPath: process.env.NODE_ENV === 'development' ? '/' : '/myvue/',
+  outputDir: 'dist',
+  assetsDir: 'static',
+  lintOnSave: process.env.NODE_ENV === 'development',
   devServer: {
     port: port,
     open: true,
